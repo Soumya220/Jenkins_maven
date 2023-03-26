@@ -9,12 +9,12 @@ pipeline {
         }
         stage('Test ') { 
             steps {
-               sh "mvn test" 
+               bat "mvn test" 
                 }
         }
         stage('Deploy') { 
             steps {
-                sh "mvn package" 
+                bat "mvn package" 
             }
        }
     }
